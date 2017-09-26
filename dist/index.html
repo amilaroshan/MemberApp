@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+        <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>MembershipApp</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+        
+        <!--     Fonts and icons     -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/css/perfect-scrollbar.min.css">
+        <!-- main CSS -->
+        <link href="styles/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="logo">
+                    <a href="#" class="simple-text">
+                        Membership App
+                    </a>
+                    <button type="button" class="pull-right menu-switch">
+                    <span class="svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 20"><g fill="none"><g style="stroke-width:3;stroke:#FFF"><path d="M0 2L25.3 2"/><path d="M0 10L25.3 10"/><path d="M0 17L25.3 17"/></g></g></svg>
+                    </span>
+                    </button>
+                </div>
+                <div class="sidebar-wrapper animated">
+                    <div class="login-info">
+                        <div class="image-circle active-border">
+                            <img class="img img-responsive" src="https://pbs.twimg.com/profile_images/718588760003383296/2AG8omMO_400x400.jpg" alt="Adelle Charles">
+                        </div>
+                        <div class="info">
+                            <h5>Chirstine J.</h5>
+                            <p>cj@google.com</p>
+                            <p>Assistant Manager</p>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li class="">
+                            <a href="dashboard.html">
+                                <span class="svg">
+                                    <img src="img/dashboard.svg" alt="">
+                                </span>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="dashboard.html">
+                                <span class="svg">
+                                <img src="img/contacts.svg" alt=""></span>
+                                <p>Contacts</p>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="dashboard.html">
+                                <span class="svg">
+                                <img src="img/members.svg" alt=""></span>
+                                <p>Members</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="dashboard.html">
+                                <span class="svg">
+                                <img src="img/payments.svg" alt=""></span>
+                                <p>Payments</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="dashboard.html">
+                                <span class="svg">
+                                    <img src="img/comm.svg" alt="">
+                                </span>
+                                <p>Communications</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="dashboard.html">
+                                <span class="svg">
+                                    <img src="img/settings.svg" alt="">
+                                </span>
+                                <p>Settings</p>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="main-panel">
+                <div class="top-search-bar">
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                        <p>Search here</p>
+                    </div>
+                    <div class="logout pull-right">
+                        <buttton>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="19" viewBox="0 0 33 19"><desc>  Created with Sketch.</desc><g fill="none"><g style="stroke-width:3;stroke:#7ED321"><path d="M23 17.6C27.4 17.6 31.1 14 31.1 9.5 31.1 5 27.4 1.4 23 1.4L9.5 1.4C5 1.4 1.4 5 1.4 9.5 1.4 14 5 17.6 9.5 17.6L23 17.6Z"/><path d="M13.4 9.5C13.4 11.7 11.6 13.4 9.4 13.4 7.2 13.4 5.5 11.7 5.5 9.5 5.5 7.3 7.2 5.5 9.4 5.5 11.6 5.5 13.4 7.3 13.4 9.5Z"/></g></g></svg>
+                        </buttton>
+                    </div>
+                </div>
+                <div class="content animated delay">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="main-title">
+                                    <span class="svg">
+                                        <img src="img/dashboard.svg" alt="">
+                                    </span>
+                                    <div class="title-content">
+                                        <h4>Dashboard - <span class="light">Overview</span></h4>
+                                        <span class="date sub-title">As at Saturday Sep 12, 2017 13:54 PM</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="overview">
+                                    <div class="card-full">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="card-inner border-right ">
+                                                    <div class="details">
+                                                        <h5>TOTAL MEMBERS</h5>
+                                                        <h1><i class="fa fa-chevron-circle-up text-success" aria-hidden="true"></i> 3260</h1>
+                                                        <span class="prevoius">Last Month: 2,890</span>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <canvas id="members" width="400" height="400"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card-inner border-right">
+                                                    <div class="details">
+                                                        <h5>MEMBERSHIP TYPES</h5>
+                                                        <h1><i class="fa fa-chevron-circle-down text-danger" aria-hidden="true"></i> 8</h1>
+                                                        <span class="prevoius">Last Month: 9</span>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <canvas id="types" width="400" height="400"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card-inner">
+                                                    <div class="details">
+                                                        <h5>Revenue</h5>
+                                                        <h1><i class="fa fa-chevron-circle-up text-success" aria-hidden="true"></i> 286000</h1>
+                                                        <span class="prevoius">Last Month: 2,890</span>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <canvas id="revenue" width="400" height="400"></canvas>
+                                                    </div>
+                                                    <!-- <div class="ct-chart4 revenue chart ct-perfect-fourth"></div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-t-25">
+                                    <div class="main-title">
+                                        <span class="svg">
+                                            <img src="img/members.svg" alt="">
+                                        </span>
+                                        <div class="title-content">
+                                            <h4>Members - <span class="light">Package Info</span></h4>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="">
+                                        <div class="card-full package-info">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card-inner border-right">
+                                                        <div class="small-card">
+                                                            
+                                                            <div class="info">
+                                                                <h5>Gold Membership</h5>
+                                                                <p><i class="fa fa-user-o" aria-hidden="true"></i> 2400 Members</p>
+                                                                <h2>300 USD</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-wrap">
+                                                            <canvas id="gold" width="400" height="400"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card-inner border-right">
+                                                        <div class="small-card">
+                                                            
+                                                            <div class="info">
+                                                                <h5>Sliver Membership</h5>
+                                                                <p><i class="fa fa-user-o" aria-hidden="true"></i> 2200 Members</p>
+                                                                <h2>200 USD</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-wrap">
+                                                            <canvas id="sliver" width="400" height="400"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card-inner border-right">
+                                                        <div class="small-card">
+                                                            
+                                                            <div class="info">
+                                                                <h5>Bronze Membership</h5>
+                                                                <p><i class="fa fa-user-o" aria-hidden="true"></i> 1400 Members</p>
+                                                                <h2>100 USD</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-wrap">
+                                                            <canvas id="bronze" width="400" height="400"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <div class="main-title m-t-25-mobile">
+                                    <span class="svg">
+                                        <img src="img/members.svg" alt="">
+                                    </span>
+                                    <div class="title-content">
+                                        <h4>Members - <span class="light">TimeLine</span></h4>
+                                    </div>
+
+                                </div>
+                                <div class="timeline-inner">
+                                    <div class="timeline" id='timeline'>
+                                        
+                                        <div class="date-wrapper">
+                                            <div class="timeline-date">
+                                                <p>14th Tuesday 2017</p>
+                                            </div>
+                                            <div class="timeline-info first">
+                                                <div class="small-card">
+                                                    <div class="image-circle active-border">
+                                                        <img class="img img-responsive" src="https://randomuser.me/api/portraits/med/men/33.jpg" alt="Adelle Charles">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Lloyd Chapman</h5>
+                                                        <p>Renewed Subscription for 6 Months</p>
+                                                        <!-- <p>Assistant Manager</p> -->
+                                                    </div>
+                                                </div>
+                                                <div class="small-card">
+                                                    <div class="image-circle success-border">
+                                                        <img class="img img-responsive" src="https://randomuser.me/api/portraits/med/men/33.jpg" alt="Adelle Charles">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Lloyd Chapman</h5>
+                                                        <p>Subscribed for Monthly Email Newsletter</p>
+                                                        <!-- <p>Assistant Manager</p> -->
+                                                    </div>
+                                                </div>
+                                                <div class="small-card">
+                                                    <div class="image-circle success-border">
+                                                        <img class="img img-responsive" src="https://randomuser.me/api/portraits/med/men/33.jpg" alt="Adelle Charles">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Lloyd Chapman</h5>
+                                                        <p>Subscribed for Monthly email Newsletter</p>
+                                                        <!-- <p>Assistant Manager</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-wrapper">
+                                            <div class="timeline-date">
+                                                <p>15th Wednesday 2017</p>
+                                            </div>
+                                            <div class="timeline-info">
+                                                
+                                                
+                                                
+                                                <div class="small-card">
+                                                    <div class="image-circle active-border">
+                                                        <img class="img img-responsive success-border" src="https://randomuser.me/api/portraits/med/men/83.jpg" alt="Felipe Nogs">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Stephen Arnold</h5>
+                                                        <p>Paid 55$ as Annual Memebership Payment</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="small-card">
+                                                    <div class="image-circle danger-border">
+                                                        <img class="img img-responsive " src="https://randomuser.me/api/portraits/women/10.jpg" alt="Felipe Nogs">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Jessica Jhones</h5>
+                                                        <p>Unsubscribed from Monthly Newsletter</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="small-card">
+                                                    <div class="image-circle success-border">
+                                                        <img class="img img-responsive " src="https://randomuser.me/api/portraits/men/10.jpg" alt="Felipe Nogs">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Jhon Andrews</h5>
+                                                        <p>Joined as a Gold Member </p>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="small-card">
+                                                    <div class="image-circle success-border">
+                                                        <img class="img img-responsive " src="https://randomuser.me/api/portraits/women/1.jpg" alt="Felipe Nogs">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Stephen Arnold</h5>
+                                                        <p>Joined your organization's for </p>
+                                                        <!--  <p>Annual MemberShip</p> -->
+                                                    </div>
+                                                </div>
+                                                <div class="small-card">
+                                                    <div class="image-circle success-border">
+                                                        <img class="img img-responsive " src="https://randomuser.me/api/portraits/men/3.jpg" alt="Felipe Nogs">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Stephen Arnold</h5>
+                                                        <p>Joined your organization's for </p>
+                                                        <!--  <p>Annual MemberShip</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-view">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="main-title">
+                                        <span class="svg">
+                                            <img src="img/members.svg" alt="">
+                                        </span>
+                                        <div class="title-content">
+                                            <h4>Members - <span class="light">Contact Info</span></h4>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card-full">
+                                        
+                                        <div class="card">
+                                            
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            
+                                                            <th>Account Name </th>
+                                                            <th>Type </th>
+                                                            <th>Email</th>
+                                                            <th>Contact No</th>
+                                                            <th>Joined Date</th>
+                                                            <th>Expiration No</th>
+                                                            <th class="text-center">Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            
+                                                            <td>David Johnson</td>
+                                                            <td>Gold</td>
+                                                            <td>Johnson@AWT.com</td>
+                                                            <td>323-6547-88</td>
+                                                            <td>Jul 14, 2018</td>
+                                                            <td>Jul 14, 2020</td>
+                                                            <td class="text-center"><i class="fa fa-check-circle text-success"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            
+                                                            <td>David Johnson</td>
+                                                            <td>Gold</td>
+                                                            <td>Johnson@AWT.com</td>
+                                                            <td>323-6547-88</td>
+                                                            <td>Jul 14, 2018</td>
+                                                            <td>Jul 14, 2020</td>
+                                                            <td class="text-center"><i class="fa fa-check-circle text-success"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            
+                                                            <td>David Johnson</td>
+                                                            <td>Gold</td>
+                                                            <td>Johnson@AWT.com</td>
+                                                            <td>323-6547-88</td>
+                                                            <td>Jul 14, 2018</td>
+                                                            <td>Jul 14, 2020</td>
+                                                            <td class="text-center"><i class="fa fa-check-circle text-success"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            
+                                                            <td>David Johnson</td>
+                                                            <td>Gold</td>
+                                                            <td>Johnson@AWT.com</td>
+                                                            <td>323-6547-88</td>
+                                                            <td>Jul 14, 2018</td>
+                                                            <td>Jul 14, 2020</td>
+                                                            <td class="text-center"><i class="fa fa-check-circle text-success"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            
+                                                            <td>David Johnson</td>
+                                                            <td>Gold</td>
+                                                            <td>Johnson@AWT.com</td>
+                                                            <td>323-6547-88</td>
+                                                            <td>Jul 14, 2018</td>
+                                                            <td>Jul 14, 2020</td>
+                                                            <td class="text-center"><i class="fa fa-check-circle text-success"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            
+                                                            <td>David Johnson</td>
+                                                            <td>Gold</td>
+                                                            <td>Johnson@AWT.com</td>
+                                                            <td>323-6547-88</td>
+                                                            <td>Jul 14, 2018</td>
+                                                            <td>Jul 14, 2020</td>
+                                                            <td class="text-center"><i class="fa fa-check-circle text-success"></i></td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                <div class="container-fluid">
+                   
+                    <p class="copyright pull-right">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="">Member App</a>
+                    </p>
+                </div>
+            </footer>
+            </div>
+        </div>
+    </body>
+    <!--   Core JS Files   -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/js/perfect-scrollbar.min.js'></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    });
+    </script>
+</html>
